@@ -1,0 +1,40 @@
+plugin_modules:
+  p:
+    plugin: 'wf/doc'
+  account:
+    plugin: 'wf/account2'
+    settings:
+      allow:
+        signin: true
+        registration: true
+        change_email: true
+        change_password: true
+      mysql:
+        server: 'localhost'
+        database: 'buto_plugin_wf_account2'
+        user_name: 'wf_account2'
+        password: '1234'
+      phpmailer:
+        SMTPAuth: 'true'
+        SMTPSecure: ssl
+        Port: '465'
+        SMTPDebug: '0'
+        Username: buto.noreply@gmail.com
+        Password: '****'
+        Host: smtp.gmail.com
+        From: buto.noreply@gmail.com
+        FromName: 'Demo plugin - wf_account2'
+        To: me@world.com
+        Subject: 'wf_account2'
+        Body: Body.
+        WordWrap: '255'
+        
+default_class: p
+default_method: home
+
+dump: true
+
+plugin:
+  twitter:
+    bootstrap335v:
+      enabled: true

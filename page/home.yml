@@ -1,0 +1,53 @@
+settings:
+  layout:
+    - html
+    - main
+content:
+  div:
+    type: div
+    attribute:
+      class: container
+    innerHTML:
+      -
+        type: div
+        attribute:
+          class: jumbotron
+        innerHTML:
+          -
+            type: div
+            attribute:
+              class: container
+            innerHTML:
+              3:
+                type: div
+                attribute:
+                  class: 'alert alert-success'
+                  role: alert
+                innerHTML:
+                  -
+                    type: span
+                    innerHTML: 'Signed in as:'
+                    settings: null
+                  -
+                    type: span
+                    innerHTML: 'globals:_SESSION/email'
+                settings:
+                  role:
+                    allow: true
+                    item:
+                      - client
+              0:
+                type: h1
+                innerHTML: 'Plugin demo - wf/account2'
+              1:
+                type: p
+                innerHTML: 'This is a demo of plugin wf/account2.'
+              2:
+                type: p
+                innerHTML:
+                  -
+                    type: a
+                    attribute:
+                      class: 'btn btn-primary btn-lg'
+                      role: button
+                    innerHTML: 'Learn more'

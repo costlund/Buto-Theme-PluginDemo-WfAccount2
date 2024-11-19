@@ -12,8 +12,8 @@ plugin_modules:
       mysql:
         server: 'localhost'
         database: 'buto_plugin_wf_account2'
-        user_name: 'wf_account2'
-        password: '1234'
+        user_name: '********'
+        password: '*******'
       phpmailer:
         SMTPAuth: 'true'
         SMTPSecure: ssl
